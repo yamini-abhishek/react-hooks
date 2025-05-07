@@ -4,6 +4,8 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { useEffect, useState } from 'react'
 import Calculation from './Calculation';
+import UseRef from './useRef/UseRef';
+import Todos from './axios/Todos';
 
 function App() {
 const [count,setCount]=useState(0);
@@ -19,6 +21,11 @@ useEffect(()=>{
     <>
      <p>Number of render is {count} time</p>
      <Calculation/>
+
+     <p>UseRef examples</p>
+     <UseRef />
+     <h1>AXIOS EXAMPLE USING TODOS</h1>
+     <Todos/>
     </>
   )
 }
