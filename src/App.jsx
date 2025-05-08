@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react'
 import Calculation from './Calculation';
 import UseRef from './useRef/UseRef';
 import Todos from './axios/Todos';
+import Posts from './axios/Posts';
 
 function App() {
 const [count,setCount]=useState(0);
@@ -26,6 +27,8 @@ useEffect(()=>{
      <UseRef />
      <h1>AXIOS EXAMPLE USING TODOS</h1>
      <Todos/>
+     <h1>AXIOS EXAMPLE USING POST</h1>
+     <Posts/>
     </>
   )
 }
